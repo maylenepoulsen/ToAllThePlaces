@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+}
+
+.title {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.burger div {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 7px;
+}
