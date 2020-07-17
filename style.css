@@ -35,18 +35,31 @@ h1 {
 
 .sidebar {
   height: 100vh;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 0px;
+  right: 0;
+  overflow-x: hidden;
+  position: fixed;
   font-family: "Montserrat", sans-serif;
   font-size: 110%;
   letter-spacing: 3px;
   background-color: lavenderblush;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
 }
 
 .sidebar ul {
   list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .sidebar ul li {
@@ -56,4 +69,42 @@ h1 {
 .sidebar a {
   text-decoration: none;
   color: #000;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 10px;
+  height: 33px;
+  width: 2px;
+  content: '';
+  background-color: #333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
 }
