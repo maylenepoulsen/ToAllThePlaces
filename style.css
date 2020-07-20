@@ -135,22 +135,32 @@ h1 {
 
 .az {
   width: 17px;
+  margin-top: 2px;
   margin-left: 25px;
+  margin-bottom: 5px;
 }
 
 .nc {
   width: 50px;
+  margin-top: -15px;
+  margin-bottom: -13px;
+  margin-left: 20px;
 }
 
 .tx {
-  width: 30px;
+  width: 27px;
+  margin-left: 25px;
 }
 
 .ut {
-  width: 17px;
+  width: 16px;
+  margin-top: 2px;
+  margin-left: 25px;
+  margin-bottom: 5px;
 }
 
 .date-display {
   display: flex;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 3px;
 }
