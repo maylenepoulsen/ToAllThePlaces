@@ -133,6 +133,17 @@ h1 {
   align-items: center;
 }
 
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 310px;
+  max-height: 210px;
+  overflow-y: hidden;
+}
+
 .az {
   width: 17px;
   margin-top: 2px;
