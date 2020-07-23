@@ -142,6 +142,7 @@ img {
   max-width: 310px;
   max-height: 210px;
   overflow-y: hidden;
+  cursor: pointer;
 }
 
 .az {
@@ -174,6 +175,7 @@ img {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   margin-top: 3px;
+  margin-bottom: 20px;
 }
 
 /* Modal */
@@ -181,8 +183,20 @@ img {
   height: 75%;
   width: 80%;
   position: fixed;
-  top: 100px;
-  left: 200px;
-  z-index: 1;
-  background-color: rgb(209, 208, 208);
+  top: 10%;
+  left: 10%;
+  background-color: #fff;
+  border: solid 4px #333;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.close-btn {
+  float: right;
+  padding-right: 15px;
+  font-size: 2.5rem;
+  cursor: pointer;
 }
