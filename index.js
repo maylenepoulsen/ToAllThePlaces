@@ -6,13 +6,13 @@ const closeSidebar = document.querySelector('.close').addEventListener('click', 
     document.querySelector('.sidebar').style.width = '0px'
 })
 
-const openModal = document.querySelectorAll('#modal').forEach((img) => {
-    img.addEventListener('click', () => {
-        modal()
+const openModal = document.querySelectorAll('.box').forEach((box) => {
+    box.addEventListener('click', (e) => {
+      modal(e.target.id)
     })
 })
 
-const modal = () => {
+const modal = (id) => {
   const body = document.querySelector('body')
 
   const div = document.createElement('div')
@@ -23,7 +23,11 @@ const modal = () => {
   span.addEventListener('click', () => {
     closeModal()  
   })
-
+ 
+  const data = places.find(place => place.id === parseInt(id))
+  console.log(data)
+  
+  div.innerHTML = `<h2>Some content about the image that was clicked</h2>`
   div.appendChild(span)
 
   div.className = 'modal'
@@ -35,3 +39,5 @@ const closeModal = () => {
   const modal = document.querySelector('.modal')
   body.removeChild(modal)    
 }
+
+
