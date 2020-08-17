@@ -26,10 +26,15 @@ const modal = (id) => {
  
   const data = places.find(place => place.id === parseInt(id))
   console.log(data)
-  
-  div.innerHTML = `<h2>Some content about the image that was clicked</h2>`
-  div.appendChild(span)
+  const dataDiv = document.createElement('div')
+  dataDiv.innerHTML = `<figure>
+                         <img src=${data.image} class='modal-img'>
+                         <figcaption class='modal-name'><h3>${data.name}&nbsp;&nbsp;&nbsp;${data.date}</h3></figcaption>
+                       </figure>`
 
+  div.appendChild(span)
+  div.appendChild(dataDiv)
+  
   div.className = 'modal'
   body.appendChild(div)
 }
