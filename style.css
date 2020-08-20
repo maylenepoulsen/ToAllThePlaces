@@ -16,6 +16,7 @@ header {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  color: #444;
   font-family: "Shadows Into Light", cursive;
   font-size: 140%;
   letter-spacing: 2px;
@@ -33,7 +34,7 @@ h1 {
 .burger div {
   width: 30px;
   height: 3px;
-  background-color: #000;
+  background-color: #444;
   margin: 7px;
 }
 
@@ -133,7 +134,7 @@ h1 {
 }
 
 .box {
-  border: 2px solid black;
+  border: 2px solid #444;
   width: 100%;
   height: 218px;
   display: flex;
@@ -210,6 +211,11 @@ h1 {
   padding-right: 15px;
   font-size: 2.5rem;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.close-btn:hover {
+  opacity: 1;
 }
 
 .modal-img {
@@ -218,7 +224,47 @@ h1 {
 }
 
 .modal-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 150%;
+  letter-spacing: 2px;
   text-align: center;
   max-width: 550px;  
+}
+
+.modal-description {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  max-width: 550px;
+  padding: 20px 25px 25px 25px;
+  line-height: 1.6;
+}
+
+.fact-list {
+  position: fixed;
+  max-width: 550px;
+  top: 13%;
+  left: 53%;
+  padding-right: 25px;  
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+  font-size: 150%;
+}
+
+.fact-list h3 {
+  text-align: center;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #444;
+}
+
+.fact-list-ul {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 75%;
+  list-style-type: circle;
+  line-height: 1.6;
+  padding: 20px 10px 0px 10px;
+}
+
+.fact-list-ul li {
+  padding-bottom: 10px;
 }
