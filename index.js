@@ -9,8 +9,14 @@ const closeSidebar = document.querySelector('.close').addEventListener('click', 
 const openModal = document.querySelectorAll('.box').forEach((box) => {
     box.addEventListener('click', (e) => {
       modal(e.target.id)
+      blurBackground()
     })
 })
+
+const blurBackground = () => {
+  const section = document.querySelector('.places')
+  section.style.opacity = 0.3
+}
 
 const modal = (id) => {
   const body = document.querySelector('body')
@@ -63,7 +69,10 @@ const factList = (array) => {
 const closeModal = () => {
   const body = document.querySelector('body')
   const modal = document.querySelector('.modal')
-  body.removeChild(modal)    
+  body.removeChild(modal) 
+  
+  const section = document.querySelector('.places')
+  section.removeAttribute('style')
 }
 
 
